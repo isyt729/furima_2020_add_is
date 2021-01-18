@@ -1,0 +1,38 @@
+.login-btn {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.login-btn-auth{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.login-red-btn {
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: red;
+}
+
+.login_auth{
+  display: block;
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+  cursor: pointer;
+}

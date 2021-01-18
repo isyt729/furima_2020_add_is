@@ -1,0 +1,39 @@
+<% breadcrumb :buy %>
+<%= render "shared/second-header"%>
+
+<div class='transaction-contents'>
+  <div class='transaction-main'>
+    <h1 class='transaction-title-text'>
+      購入内容の確認
+    </h1>
+    <%# 購入内容の表示 %>
+    <div class='buy-item-info'>
+      <%= image_tag @item.images[0], class: 'buy-item-img' %>
+      <div class='buy-item-right-content'>
+        <h2 class='buy-item-text'>
+          <%= @item.info %>
+        </h2>
+        <div class='buy-item-price'>
+          <p class='item-price-text'>¥<%= @item.price %></p>
+          <p class='item-price-sub-text'>（税込）送料込み</p>
+        </div>
+      </div>
+    </div>
+    <%# /購入内容の表示 %>
+
+    <%# 支払額の表示 %>
+    <div class='item-payment'>
+      <h1 class='item-payment-title'>
+        支払金額
+      </h1>
+      <p class='item-payment-price'>
+        ¥<%= @item.price %>
+      </p>
+    </div>
+    <%# /支払額の表示 %>
+    <div class='buy-btn'>
+      <%= button_to "購入",  item_transactions_path(@item) , mehod: :post ,class: "buy-red-btn" %>
+    </div>
+  </div>
+</div>
+<%= render "shared/second-footer"%>
